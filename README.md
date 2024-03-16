@@ -38,3 +38,5 @@ Run the Jupyter notebooks in the following order:
 `Convert_StrainImage.ipynb`
 
 `Apply_ResNet50.ipynb`
+
+# Important instructions
