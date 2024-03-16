@@ -15,3 +15,26 @@ The three target labels for the classification are defined as follows:
 - Class 1:  1,620 =< HFF slope =< 4,990
 - Class 2: 1,450 =< HFF slope < 1,620
 - Class 3: 950 =< HFF slope < 1,450
+
+# Implementation structure
+
+```
+resnet50-sngw-hff
+|___ Codes
+     |___ Convert_StrainImage.ipynb
+     |___ Apply_ResNet50.ipynb
+|___ Datasets
+|___ Metrics
+     |___ kfold_CV
+|___ Models
+     |___ GridSearchCV
+     |___ Single_learning
+|___ LICENCE
+|___ README.md
+```
+
+Run the Jupyter notebooks in the following order:
+
+`Convert_StrainImage.ipynb`
+
+`Apply_ResNet50.ipynb`
