@@ -1,4 +1,17 @@
 # Summary
-Python implementation for characterizing the high frequency feature (HFF) in Gravitational Waves (GW) emitted by Core-Collapse Supernovae (CCSNe). This implementation begins with the generation of a dataset scalogram images containg GW events embedded in real LIGO-Virgo noise, and then apply a ResNet50 model to classify images according the slope of the HFF present in the scalograms. Written by Manuel D. Morales, manueld.morales@academicos.udg.mx.
 
-Deep residual network (ResNet50) to classify the high frequency feature in gravitational waves emitted by core-collapse supernovae (CCSNe). This implementation draws on datasets generated in projects [datagen-sngw-phen](https://github.com/ManuelDMorales/datagen-sngw-phen) and [datagen-sngw-genrel](https://github.com/ManuelDMorales/datagen-sngw-genrel), which consist of window strain time series containing interferometric noise plus gravitational waves from CCSNe. In this project, we convert these strain time samples to time-frequency (TF) Morlet wavelet scalograms. Then, these TF scalograms were converted to RGB images to be inputted to the ResNet50 model.
+Deep residual network (ResNet50) to classify RGB images of time-frequency (TF) Morlet wavelet scalograms of gravitational waves from core-collapse supernovae (CCSNe). We performed a three-class classification, in which the target label is assigned if the slope of the High Frequency Feature, present in the scalograms, belongs to one of three slope ranges. This three-class classification allows us to study the detectability of the HFF because, depending on the CCSN model and the noise realization, the visibility of the HFF can vary.
+
+This project draws on datasets generated in projects [datagen-sngw-phen](https://github.com/ManuelDMorales/datagen-sngw-phen) and [datagen-sngw-genrel](https://github.com/ManuelDMorales/datagen-sngw-genrel), which consist of window strain time series containing interferometric noise plus gravitational waves from CCSNe. Jupyter notebooks developed in Python by Manuel D. Morales (e-mail: <manueld.morales@academicos.udg.mx>).
+
+# Science background
+
+The samples used in this project consist of time series of real noise from LIGO (L1, H1) and (V1) interferometric detectors from the O3b run plus gravitational wave signals from CCSN, bot phenomenological waveforms, and general relativistic waveforms. In all cases, these waveforms contain the HFF which, depending on the model and the noise, is more or less visible.
+
+Phenomenological waveforms come from a stochastic non-physical model that mimics the HFF, see [Astone et al Phys. Rev. D 98, 122002 (2018)](https://doi.org/10.1103/PhysRevD.98.122002). On the other hand, general relativistic waveforms are a modified version of those obtained from three CCSN simulations: [Andresen 2019 m15nr h+](https://doi.org/10.1093/mnras/stz990) (from a 3D code), [Morozova 2018 M13_SFHo h+](https://doi.org/10.3847/1538-4357/aac5f1) (from a 2D code), and [Cerda-Duran 2013 fiducial h+](https://iopscience.iop.org/article/10.1088/2041-8205/779/2/L18) (from a 2D code). The modification of the general relativistic waveforms has to do with the fact that all features other than the HFF were removed/filtered.
+
+The three target labels of the classification are defined in function of the HFF slope:
+
+- Class 1:  1,620 =< HFF slope =< 4,990
+- Class 2: 1,450 =< HFF slope < 1,620
+- Class 3: 950 =< HFF slope < 1,450
