@@ -16,6 +16,8 @@ The three target labels for the classification are defined as follows:
 - Class 2: 1,450 =< HFF slope < 1,620
 - Class 3: 950 =< HFF slope < 1,450
 
+Fig. 1 Shows the ResNet50 architecture used in this project, which consists of 50 layers in the main path, and 23,593,859 model parameters occupying 90MB in memory.
+
 # Implementation structure
 
 ```
@@ -33,10 +35,10 @@ resnet50-sngw-hff
 |___ README.md
 ```
 
-Run the Jupyter notebooks in the following order:
+The codes were run in Google Colaboratory, in the following order:
 
-`Convert_StrainImage.ipynb`
+`Convert_StrainImage.ipynb` for reading the window strain datasets and converting them into images of TF scalograms.
 
-`Apply_ResNet50.ipynb`
+`Apply_ResNet50.ipynb` for apply the ResNet50 model
 
 # Important instructions
