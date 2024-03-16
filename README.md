@@ -8,9 +8,9 @@ This project draws on datasets generated in projects [datagen-sngw-phen](https:/
 
 The samples used in this project consist of time series of real noise from LIGO (L1, H1) and (V1) interferometric detectors from the O3b run plus gravitational wave signals from CCSN, bot phenomenological waveforms, and general relativistic waveforms. In all cases, these waveforms contain the HFF which, depending on the model and the noise, is more or less visible.
 
-Phenomenological waveforms come from a stochastic non-physical model that mimics the HFF, see [Astone et al Phys. Rev. D 98, 122002 (2018)](https://doi.org/10.1103/PhysRevD.98.122002). On the other hand, general relativistic waveforms are a modified version of those obtained from three CCSN simulations: [Andresen 2019 m15nr h+](https://doi.org/10.1093/mnras/stz990) (from a 3D code), [Morozova 2018 M13_SFHo h+](https://doi.org/10.3847/1538-4357/aac5f1) (from a 2D code), and [Cerda-Duran 2013 fiducial h+](https://iopscience.iop.org/article/10.1088/2041-8205/779/2/L18) (from a 2D code). The modification of the general relativistic waveforms has to do with the fact that all features other than the HFF were removed/filtered.
+Phenomenological waveforms come from a stochastic non-physical model that mimics the HFF, see [Astone et al Phys. Rev. D 98, 122002 (2018)](https://doi.org/10.1103/PhysRevD.98.122002). On the other hand, general relativistic waveforms are a modified version of those obtained from three multidimensional CCSN simulations: [Andresen 2019 m15nr h+](https://doi.org/10.1093/mnras/stz990), [Morozova 2018 M13_SFHo h+](https://doi.org/10.3847/1538-4357/aac5f1), and [Cerda-Duran 2013 fiducial h+](https://iopscience.iop.org/article/10.1088/2041-8205/779/2/L18). The modification of the general relativistic waveforms has to do with the fact that all features other than the HFF were removed or filtered.
 
-The three target labels of the classification are defined in function of the HFF slope:
+The three target labels for the classification are defined as follows:
 
 - Class 1:  1,620 =< HFF slope =< 4,990
 - Class 2: 1,450 =< HFF slope < 1,620
