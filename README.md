@@ -1,2 +1,4 @@
-# resnet50-sngw-hff
-ResNet50 model to classifiy the high frequency feature in gravitational waves from core-collapse supernovae
+# Summary
+Python implementation for characterizing the high frequency feature (HFF) in Gravitational Waves (GW) emitted by Core-Collapse Supernovae (CCSNe). This implementation begins with the generation of a dataset scalogram images containg GW events embedded in real LIGO-Virgo noise, and then apply a ResNet50 model to classify images according the slope of the HFF present in the scalograms. Written by Manuel D. Morales, manueld.morales@academicos.udg.mx.
+
+Deep residual network (ResNet50) to classify the high frequency feature in gravitational waves emitted by core-collapse supernovae (CCSNe). This implementation draws on datasets generated in projects [datagen-sngw-phen](https://github.com/ManuelDMorales/datagen-sngw-phen) and [datagen-sngw-genrel](https://github.com/ManuelDMorales/datagen-sngw-genrel), which consist of window strain time series containing interferometric noise plus gravitational waves from CCSNe. In this project, we convert these strain time samples to time-frequency (TF) Morlet wavelet scalograms. Then, these TF scalograms were converted to RGB images to be inputted to the ResNet50 model.
