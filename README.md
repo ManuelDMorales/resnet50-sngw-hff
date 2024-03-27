@@ -26,9 +26,15 @@ resnet50-sngw-hff
      |___ Convert_StrainImage.ipynb
      |___ Apply_ResNet50.ipynb
 |___ Datasets
+     |___ GenRelWf
+          |___ Distance_1Kpc
+          |___ Distance_5Kpc
+          |___ Distance_10Kpc
+     |___ PhenWf
 |___ Metrics
      |___ kfold_CV
 |___ Models
+     |___ Best_training
      |___ GridSearchCV
      |___ Single_learning
 |___ LICENCE
@@ -37,8 +43,20 @@ resnet50-sngw-hff
 
 The codes were run in Google Colaboratory, in the following order:
 
-`Convert_StrainImage.ipynb` for reading the window strain datasets and converting them into images of TF scalograms.
+`Convert_StrainImage.ipynb` for reading the window strain datasets and converting them into images of TF scalograms. In the current implementation, data can be loaded by two folders: PhenWf and GenRelWf for phenomenological waveforms and general relativistic waveforms, respectively. Moreover, for general relativistic waveforms, datasets are loaded for folders at different distances (see important instruction no. 1 of the next section).
 
 `Apply_ResNet50.ipynb` for apply the ResNet50 model
 
 # Important instructions
+
+1. All scripts were run in a specific Google Drive location, then you will need to edit the high-level path location in which the project (resnet50-sngw-hff) is located.
+   
+2. Notice that the Datasets folder, as shown in the project's tree, has a specific hierarchical structure. Excepting the number of distances (which can be more or less than 3), it is highly recommended to maintain this structure, to have a reasonable organization of the datasets, and to run the `Convert_StrainImage.ipynb` script without path locations changes inside the folder of the project. Then, if you run codes datagen-sngw-phen and/or datagen-sngw-genrel to generate datasets, located output folders (syntax: detector_GPStime) inside the PhenWf folder and/or the GenRelWf/Distance_dKpc (with "d" the distance from the CCSN), respectively.
+
+3. The high-level structure of the `Convert_StrainImage.ipynb` script consists of two big sections: the first is for training and testing with phenomenological waveforms, and the second is for testing with general relativistic waveforms. The first section is the most computationally intensive to run. Then, after running GridSearch CV and finding the best hyperparameter combination (section 7.2), the ResNet50 is trained with these hyperparameters, and the final model is saved in the Models/Best_training folder. If you run in this form, always save the best model to make it easily available for testing with phenomenological and general relativistic waveforms.
+
+5. `Convert_StrainImage.ipynb` script has two input parameter fields: subsection I.1. for phenomenological waveforms, and subsection II.2. for general relativistic waveforms. Both sections requires information about the configuration of interferometers' data, but only the second the information about the distance from the CCSN.
+
+6. For testing purposes, subsection II.5 of `Convert_StrainImage.ipynb` can be omitted. This was implemented for exploratory data analysis with general relativistic waveforms, considering the whole dataset, namely the TF Morlet wavelet image samples at the three default distances (1, 5, and 10 Kpc) with the three CCSN models. If you run this subsection with less data, it will surely give you errors.
+   
+7. Saving plots as images is not mandatory in the codes. However, if you want it, you will need to create a folder "Figures" at the highest folder hierarchy of the project, and to uncomment line(s) with the plt.savefig statements in the scripts, for the desired plot(s).
