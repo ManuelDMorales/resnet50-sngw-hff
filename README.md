@@ -26,6 +26,11 @@ resnet50-sngw-hff
      |___ Convert_StrainImage.ipynb
      |___ Apply_ResNet50.ipynb
 |___ Datasets
+     |___ GenRelWf
+          |___ Distance_1Kpc
+          |___ Distance_5Kpc
+          |___ Distance_10Kpc
+     |___ PhenWf
 |___ Metrics
      |___ kfold_CV
 |___ Models
@@ -37,8 +42,12 @@ resnet50-sngw-hff
 
 The codes were run in Google Colaboratory, in the following order:
 
-`Convert_StrainImage.ipynb` for reading the window strain datasets and converting them into images of TF scalograms.
+`Convert_StrainImage.ipynb` for reading the window strain datasets and converting them into images of TF scalograms. In the current implementation, data can be loaded by two folders: PhenWf and GenRelWf for phenomenological waveforms and general relativistic waveforms, respectively. Moreover, for general relativistic waveforms, datasets are loaded for folders at different distances (see important instruction no. 1 of the next section).
 
 `Apply_ResNet50.ipynb` for apply the ResNet50 model
 
 # Important instructions
+
+1. All scripts were run in a specific Google Drive location, then you will need to edit the high level path location in which the project (resnet50-sngw-hff) is located.
+   
+2. Notice that the Datasets folder, as shown in the project's tree, has a specific hierarchical estructure. Excepting the number of distances (which can be more or less than 3), it is highly recommended to maintain this structure, to have a reasonable organization of the datasets, and to run the `Convert_StrainImage.ipynb` script without path locations changes inside the folder of the project. Therefore, if you run codes datagen-sngw-phen and/or datagen-sngw-genrel to generate datasets, located output folders (syntax: detector_GPStime) inside the PhenWf folder and/or the GenRelWf/Distance_dKpc (with "d" the specific distance from the source), respectively.
