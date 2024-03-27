@@ -16,7 +16,12 @@ The three target labels for the classification are defined as follows:
 - Class 2: 1,450 =< HFF slope < 1,620
 - Class 3: 950 =< HFF slope < 1,450
 
-Fig. 1 Shows the ResNet50 architecture used in this project, which consists of 50 layers in the main path, and 23,593,859 model parameters occupying 90MB in memory.
+Fig. 1 Shows the ResNet50 architecture used in this project, which consists of 50 layers in the main path, and 23,593,859 model parameters occupying 90MB in memory. In particular, this architecture is formed by five stages in which identity blocks and/or convolutional blocks are applied, plus a classification stage with a dense (fully connected) layer with a softmax activation giving three probabilistic scores per class. Besides, after stages 1 and 5, a max pooling and an average pooling, respectively, are applied to reduce the system resources. Also notice that at the beginning, a zero padding is applied to the input data.
+
+<br/>
+
+![ResNet50](Pictures/ResNet50_complete.png)
+<b>Figure 1</b>. ResNet50 architecture used in this project.
 
 # Implementation structure
 
