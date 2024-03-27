@@ -54,7 +54,7 @@ The codes were run in Google Colaboratory, in the following order:
 
 `Apply_ResNet50.ipynb` for apply the ResNet50 model. This script has a high-level structure consisting of two big sections: the first is for training and testing with phenomenological waveforms, and the second is for testing with general relativistic waveforms.
 
-# Important instruction
+# Important instructions
 
 1. All scripts were run in a specific Google Drive location, then you will need to edit the high-level path location in which the project (resnet50-sngw-hff) is located.
    
@@ -62,7 +62,7 @@ The codes were run in Google Colaboratory, in the following order:
 
 3. The first section of `Apply_ResNet50.ipynb` script is more computationally intensive to run than its second section. Then, after running GridSearch CV and finding the best hyperparameter combination (section 7.2), the ResNet50 is trained with these hyperparameters, and the final model is saved in the Models/Best_training folder. If you run in this form, always save the best model to make it easily available for testing with phenomenological and general relativistic waveforms.
 
-5. `Apply_ResNet50.ipynb` script has two input parameter fields: subsection I.1. for phenomenological waveforms, and subsection II.2. for general relativistic waveforms. Both sections requires information about the configuration of interferometers' data, but only the second the information about the distance from the CCSN.
+5. `Apply_ResNet50.ipynb` script has two input parameter fields: subsection I.1. for phenomenological waveforms, and subsection II.2. for general relativistic waveforms. Both sections input the choice of interferometers' data, but only the second the distance from the CCSN.
 
 6. For testing purposes, subsection II.5 of `Apply_ResNet50.ipynb` script can be omitted. This was implemented for exploratory data analysis with general relativistic waveforms, considering the whole dataset, namely the TF Morlet wavelet image samples at the three default distances (1, 5, and 10 Kpc) with the three CCSN models. If you run this subsection with less data, it will surely give you errors.
    
