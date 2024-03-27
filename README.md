@@ -58,7 +58,7 @@ The codes were run in Google Colaboratory, in the following order:
 
 1. All scripts were run in a specific Google Drive location, then you will need to edit the high-level path location in which the project (resnet50-sngw-hff) is located.
    
-2. Notice that the Datasets folder, as shown in the project's tree, has a specific hierarchical structure. For the first run, it is highly recommended to maintain this structure. If you run codes datagen-sngw-phen and/or datagen-sngw-genrel to generate datasets, you will need to locate output folders (syntax: detector_GPStime) inside the PhenWf folder and/or the GenRelWf/Distance_dKpc (with "d" the distance from the CCSN), respectively.
+2. Notice that the Datasets folder, as shown in the project's tree, has a specific hierarchical structure. For the first run, it is highly recommended to maintain this structure. If you run [datagen-sngw-phen](https://github.com/ManuelDMorales/datagen-sngw-phen) and/or [datagen-sngw-genrel](https://github.com/ManuelDMorales/datagen-sngw-genrel) to generate datasets, you will need to locate the highest output folders inside the PhenWf folder and/or the GenRelWf/Distance_dKpc (with "d" the distance from the CCSN), respectively.
 
 3. The first section of `Apply_ResNet50.ipynb` script is more computationally intensive to run than its second section. Then, after running GridSearch CV and finding the best hyperparameter combination (section 7.2), the ResNet50 is trained with these hyperparameters, and the final model is saved in the Models/Best_training folder. If you run in this form, always save the best model to make it easily available for testing with phenomenological and general relativistic waveforms.
 
