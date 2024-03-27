@@ -21,7 +21,7 @@ Fig. 1 Shows the ResNet50 architecture used in this project. This is formed by f
 <br/>
 
 ![ResNet50](Pictures/ResNet50_complete.png)
-<b>Figure 1</b>. ResNet50 architecture used in this project; it consists of 50 layers in the main path, and 23,593,859 model parameters occupying 90MB in memory
+<b>Figure 1</b>. Residual deep learning architecture used in this project: ResNet50. It consists of 50 layers in the main path, and 23,593,859 model parameters occupying 90MB in memory.
 
 # Implementation structure
 
