@@ -68,7 +68,7 @@ The codes were run in Google Colaboratory, in the following order:
    
 7. Saving plots as images is not mandatory in the codes. However, if you want it, you will need to create a folder "Figures" at the highest folder hierarchy of the project, and to uncomment line(s) with the plt.savefig statements in the scripts, for the desired plot(s).
 
-# Citation
+# Cite this work
 
 If you use this software in your work, please cite it using the following metadata:
 
@@ -81,3 +81,6 @@ version = {1.0.0},
 year = {2024}
 }
 ```
+# About GPL-3.0 licence
+
+Notice this code is shared under a GNU General Public Licence 3.0, which is a strong copyleft license. It means that any copy or modification of the original software must also be released under the GPL-3.0. The choice of this licence is aligned to Open Science practices. More details about GPL-3.0 in the file [README.md](https://github.com/ManuelDMorales/resnet50-sngw-hff/blob/main/LICENSE). We also suggest to see the [UNESCO Recomendation on Open Science](https://www.unesco.org/en/open-science/about?hub=686).
