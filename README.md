@@ -18,7 +18,7 @@ The three target labels for the classification are defined as follows:
 - Class 2: 1,450 =< HFF slope < 1,620
 - Class 3: 950 =< HFF slope < 1,450
 
-Fig. 1 Shows the ResNet50 architecture used in this project. This is formed by five stages in which identity blocks and/or convolutional blocks are applied, plus a classification stage with a dense (fully connected) layer with a softmax activation giving three probabilistic scores per class. Besides, after stages 1 and 5, a max pooling and an average pooling, respectively, are applied to reduce the system resources. Also notice that at the beginning, a zero padding is applied to the input data. If you are not familiar with residual deep learning, see the seminal paper [He et al CVPR, 770-778 (2016)](https://doi.org/10.1109/CVPR.2016.90).
+Fig. 1 Shows the ResNet50 architecture used in this project. This is formed by five stages in which identity blocks and/or convolutional blocks are applied, plus a classification stage with a dense (fully connected) layer with a softmax activation giving three probabilistic scores per class. Besides, after stages 1 and 5, a max pooling and an average pooling, respectively, are applied to reduce the system resources. Also notice that at the beginning, a zero padding is applied to the input data. If you are not familiar with deep residual learning, we recommend to explore the seminal paper [He et al CVPR, 770-778 (2016)](https://doi.org/10.1109/CVPR.2016.90).
 
 <br/>
 
