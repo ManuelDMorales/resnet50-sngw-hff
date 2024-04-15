@@ -67,3 +67,17 @@ The codes were run in Google Colaboratory, in the following order:
 6. For testing purposes, subsection II.5 of `Apply_ResNet50.ipynb` script can be omitted. This was implemented for exploratory data analysis with general relativistic waveforms, considering the whole dataset, namely the TF Morlet wavelet image samples at the three default distances (1, 5, and 10 Kpc) with the three CCSN models. If you run this subsection with less data, it will surely give you errors.
    
 7. Saving plots as images is not mandatory in the codes. However, if you want it, you will need to create a folder "Figures" at the highest folder hierarchy of the project, and to uncomment line(s) with the plt.savefig statements in the scripts, for the desired plot(s).
+
+# Citation
+
+If you use this software in your work, please cite it using the following metadata:
+
+```
+@software{Morales_resnet50-sngw-hff_2024,
+author = {Morales, Manuel David},
+title = {{resnet50-sngw-hff}},
+url = {https://github.com/ManuelDMorales/resnet50-sngw-hff},
+version = {1.0.0},
+year = {2024}
+}
+```
