@@ -30,22 +30,22 @@ Fig. 1 Shows the ResNet50 architecture used in this project. This is formed by f
 # Implementation structure
 
 ```
-resnet50-sngw-hff
-|___ Codes
+resnet50-sngw-hff/
+|___ Codes/
      |___ Apply_ResNet50.ipynb
      |___ Convert_StrainImage.ipynb
-|___ Datasets
-     |___ GenRelWf
-          |___ Distance_1Kpc
-          |___ Distance_5Kpc
-          |___ Distance_10Kpc
-     |___ PhenWf
-|___ Metrics
-     |___ kfold_CV
-|___ Models
-     |___ Best_training
-     |___ GridSearchCV
-     |___ Single_learning
+|___ Datasets/
+     |___ GenRelWf/
+          |___ Distance_1Kpc/
+          |___ Distance_5Kpc/
+          |___ Distance_10Kpc/
+     |___ PhenWf/
+|___ Metrics/
+     |___ kfold_CV/
+|___ Models/
+     |___ Best_training/
+     |___ GridSearchCV/
+     |___ Single_learning/
 |___ LICENCE
 |___ README.md
 ```
