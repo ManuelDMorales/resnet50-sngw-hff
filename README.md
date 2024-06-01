@@ -6,7 +6,7 @@ Deep residual network (ResNet50) to classify RGB images of time-frequency (TF) M
 
 This multi-class classification allows us to study the detectability of the HFF because, depending on the CCSN model and the noise realization, the visibility of the HFF can vary. Moreover, as proof of principle, it allows us to evaluate our ability to discriminate between CCSN parameter configurations (expressed in HFF slope ranges) that are potentially discoverable through future LIGO and Virgo observations.
 
-This project draws on datasets generated with software available on the repositories [datagen-sngw-phen](https://github.com/ManuelDMorales/datagen-sngw-phen) and [datagen-sngw-genrel](https://github.com/ManuelDMorales/datagen-sngw-genrel), which consist of window strain time series containing interferometric noise plus gravitational waves from CCSNe. Exhaustive results of this implementation ara available in the scientific paper [arXiv reference to be announced].
+This project draws on datasets generated with software available on the repositories [datagen-sngw-phen](https://github.com/ManuelDMorales/datagen-sngw-phen) and [datagen-sngw-genrel](https://github.com/ManuelDMorales/datagen-sngw-genrel), which consist of window strain time series containing interferometric noise plus gravitational waves from CCSNe. Exhaustive scientific methodology and astrophysical results obtained from this implementation ara available in the paper [arXiv reference to be announced].
 
 Jupyter notebooks developed by Manuel D. Morales (contact: <manueld.morales@academicos.udg.mx>).
 
