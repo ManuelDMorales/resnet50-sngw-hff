@@ -85,7 +85,7 @@ Reference for the scientific methodology and/or astrophysical results obtained f
 }
 ```
 
-On the other hand, if you use this software in your work, please cite it using the following metadata:
+If you use this software in your work, please cite it using the following metadata:
 
 ```
 @software{Morales_resnet50-sngw-hff_2024,
