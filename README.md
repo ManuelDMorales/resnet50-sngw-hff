@@ -72,7 +72,20 @@ The codes were run in Google Colaboratory, in the following order:
 
 # Cite this work
 
-If you use this software in your work, please cite it using the following metadata:
+Reference for the scientific methodology and/or astrophysical results obtained from this software:
+
+```
+@misc{mM24,
+      title={Residual neural networks to classify the high frequency emission in core-collapse supernova gravitational waves}, 
+      author={Manuel D. Morales and Javier M. Antelis and Claudia Moreno},
+      year={2024},
+      eprint={to be announced},
+      archivePrefix={arXiv},
+      primaryClass={astro-ph.HE}
+}
+```
+
+On the other hand, if you use this software in your work, please cite it using the following metadata:
 
 ```
 @software{Morales_resnet50-sngw-hff_2024,
@@ -83,6 +96,7 @@ version = {1.0.0},
 year = {2024}
 }
 ```
+
 # About GPL-3.0 licence
 
 Notice this code is shared under a GNU General Public Licence 3.0, which is a strong copyleft license. It means that any copy or modification of the original software must also be released under the GPL-3.0. The choice of this licence is aligned to Open Science practices. More details about GPL-3.0 in the `README.md` file of the repository. We also suggest to see the [UNESCO Recomendation on Open Science](https://www.unesco.org/en/open-science/about?hub=686).
