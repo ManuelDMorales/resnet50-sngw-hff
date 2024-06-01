@@ -74,7 +74,7 @@ The codes were run in Google Colaboratory, in the following order:
 
 # Cite this work
 
-Scientific methodology and/or astrophysical results obtained from this software:
+Paper with scientific methodology and astrophysical results obtained from this software:
 
 ```
 @misc{mM24,
