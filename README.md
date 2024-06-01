@@ -72,7 +72,7 @@ The codes were run in Google Colaboratory, in the following order:
 
 # Cite this work
 
-Reference for the scientific methodology and/or astrophysical results obtained from this software:
+Scientific methodology and/or astrophysical results obtained from this software:
 
 ```
 @misc{mM24,
@@ -90,6 +90,7 @@ If you use this software in your work, please cite it using the following metada
 ```
 @software{Morales_resnet50-sngw-hff_2024,
 author = {Morales, Manuel David},
+month = jun,
 title = {{resnet50-sngw-hff}},
 url = {https://github.com/ManuelDMorales/resnet50-sngw-hff},
 version = {1.0.0},
