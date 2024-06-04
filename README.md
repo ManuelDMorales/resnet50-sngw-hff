@@ -12,7 +12,7 @@ Jupyter notebooks developed by Manuel D. Morales (contact: <manueld.morales@acad
 
 # Science background
 
-The samples used in this project consist of time series of real noise from LIGO (L1, H1) and Virgo (V1) interferometric detectors, from the O3b run plus gravitational wave signals from CCSN, both phenomenological waveforms, and general relativistic waveforms. In all cases, these waveforms contain the HFF which, depending on the model and the noise, is more or less visible. The HFF codifies astrophysical information about the pulsation of the proto-neutron star (PNS) created in the CCSN.
+The samples used in this project consist of time series of real noise from LIGO (L1, H1) and Virgo (V1) interferometric detectors from the O3b run, plus gravitational wave signals from CCSN phenomenological and general relativistic waveforms. In all cases, these waveforms contain the HFF which, depending on the model and the noise, is more or less visible. The HFF codifies astrophysical information about the pulsation of the proto-neutron star (PNS) created in the CCSN.
 
 Phenomenological waveforms come from a stochastic non-physical model that mimics the HFF, see [Astone et al Phys. Rev. D 98, 122002 (2018)](https://doi.org/10.1103/PhysRevD.98.122002). On the other hand, general relativistic waveforms come from three multidimensional CCSN simulations: [Andresen 2019 m15nr h+](https://doi.org/10.1093/mnras/stz990), [Morozova 2018 M13_SFHo h+](https://doi.org/10.3847/1538-4357/aac5f1), and [Cerda-Duran 2013 fiducial h+](https://iopscience.iop.org/article/10.1088/2041-8205/779/2/L18). Our task is a single-feature characterization; then in the case of general relativistic waveforms, we filter features other than HFF before be injected into noise.
 
