@@ -1,4 +1,4 @@
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![arXiv](https://img.shields.io/badge/arXiv-1234.56789-f9f107.svg)](https://arxiv.org/abs/2406.00422)
 
 # Summary
 
@@ -6,7 +6,7 @@ Deep residual network (ResNet50) to classify RGB images of time-frequency (TF) M
 
 This multi-class classification allows us to study the detectability of the HFF because, depending on the CCSN model and the noise realization, the visibility of the HFF can vary. Moreover, as proof of principle, it allows us to evaluate our ability to discriminate between CCSN parameter configurations (expressed in HFF slope ranges) that are potentially discoverable through future LIGO and Virgo observations.
 
-This project draws on datasets generated with software available on the repositories [datagen-sngw-phen](https://github.com/ManuelDMorales/datagen-sngw-phen) and [datagen-sngw-genrel](https://github.com/ManuelDMorales/datagen-sngw-genrel), which consist of window strain time series containing interferometric noise plus gravitational waves from CCSNe. Exhaustive scientific methodology and astrophysical results obtained from this implementation ara available in the paper [arXiv reference to be announced].
+This project draws on datasets generated with software available on the repositories [datagen-sngw-phen](https://github.com/ManuelDMorales/datagen-sngw-phen) and [datagen-sngw-genrel](https://github.com/ManuelDMorales/datagen-sngw-genrel), which consist of window strain time series containing interferometric noise plus gravitational waves from CCSNe. Exhaustive scientific methodology and astrophysical results obtained from this implementation ara available in the paper [arXiv:2406.00422](https://arxiv.org/abs/2406.00422).
 
 Jupyter notebooks developed by Manuel D. Morales (contact: <manueld.morales@academicos.udg.mx>).
 
@@ -81,7 +81,7 @@ Paper with scientific methodology and astrophysical results obtained from this s
       title={Residual neural networks to classify the high frequency emission in core-collapse supernova gravitational waves}, 
       author={Manuel D. Morales and Javier M. Antelis and Claudia Moreno},
       year={2024},
-      eprint={to be announced},
+      eprint={2406.00422},
       archivePrefix={arXiv},
       primaryClass={astro-ph.HE}
 }
